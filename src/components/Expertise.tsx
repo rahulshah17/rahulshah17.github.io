@@ -94,7 +94,7 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & SDLC</h3>
+                    <h3>CI/CD & SDLC</h3>
                     <p>I follow end-to-end best practices across the Software Development Life Cycle (SDLC), from planning to development, 
                         testing, and deployment. I'm well-versed in Git for version control, including 
                         branching strategies and rebasing. I’ve implemented CI/CD pipelines using 

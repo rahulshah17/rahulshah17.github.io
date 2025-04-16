@@ -43,7 +43,7 @@ function Main() {
             }} 
             onClick={() => downloadResume()}
           >
-            <b>Download Resume </b>
+            <b>View Resume </b>
           </Button>
           <div className="mobile_social_icons">
             <a href="https://www.linkedin.com/in/rahulshah1799/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
