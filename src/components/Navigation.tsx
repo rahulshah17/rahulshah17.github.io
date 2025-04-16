@@ -17,8 +17,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
-
+const navItems = [['Skills', 'expertise'], ['Work Experience', 'experience'], ['Projects', 'projects'], ['Contact', 'contact']];
+const preList = [['Rahul Shah', 'home']];
 function Navigation({parentToChild, modeChange}: any) {
 
   const {mode} = parentToChild;
@@ -48,6 +48,10 @@ function Navigation({parentToChild, modeChange}: any) {
 
   const scrollToSection = (section: string) => {
     console.log(section)
+    if (section === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {
       expertiseElement.scrollIntoView({ behavior: 'smooth' });
@@ -92,6 +96,13 @@ function Navigation({parentToChild, modeChange}: any) {
           ) : (
             <DarkModeIcon onClick={() => modeChange()}/>
           )}
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, marginRight: 'auto' }}>
+            {preList.map((item) => (
+              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                {item[0]}
+              </Button>
+            ))}
+          </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>

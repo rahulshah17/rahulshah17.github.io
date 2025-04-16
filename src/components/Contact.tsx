@@ -5,6 +5,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 function Contact() {
 
@@ -54,8 +57,21 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
-          <Box
+          <p>
+            Feel free to reach out to me via LinkedIn 
+            <a href="https://www.linkedin.com/in/rahulshah1799/" target="_blank" rel="noreferrer">< LinkedInIcon/></a>
+            or Email
+            <a 
+              href="mailto:rhshah@umass.edu" 
+              target="_blank" 
+              rel="noreferrer noopener"
+              aria-label="Send email to rhshah@umass.edu"
+              title="Send me an email"
+            >
+              <EmailIcon />
+            </a>
+            </p>
+          {/* <Box
             ref={form}
             component="form"
             noValidate
@@ -106,7 +122,7 @@ function Contact() {
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
               Send
             </Button>
-          </Box>
+          </Box> */}
         </div>
       </div>
     </div>
