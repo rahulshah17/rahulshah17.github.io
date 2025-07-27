@@ -32,7 +32,8 @@ function Main() {
             </a>
           </div>
           <h1>Rahul Hemal Shah</h1>
-          <p>Grad Student @University of Massachusetts Amherst</p>
+          <p>Senior Full Stack Engineer</p>
+          <p>May 2025 - MSCS from UMass Amherst</p>
           <Button 
             sx={{ 
               color: '#fff', 
